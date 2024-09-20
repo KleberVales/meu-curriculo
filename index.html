@@ -5,110 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Currículo</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #4CAF50;
-        }
-
-        h2 {
-            margin-bottom: 10px;
-            color: #333;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            margin-bottom: 5px;
-        }
-
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .skills li {
-            display: inline-block;
-            background: #4CAF50;
-            color: #fff;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-
-        .experience, .education {
-            margin-bottom: 20px;
-        }
-
-        .experience-item, .education-item {
-            margin-bottom: 10px;
-        }
-
-        .experience-item h3, .education-item h3 {
-            margin-bottom: 5px;
-            font-size: 1.2em;
-            color: #4CAF50;
-        }
-
-        .experience-item span, .education-item span {
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Seu Nome</h1>
+        <header id="cabecalho">
+            <h1>Kleber Santos dos Vales</h1>
 
-        <div class="contact-info">
-            <p><strong>Email:</strong> seuemail@exemplo.com</p>
-            <p><strong>Telefone:</strong> (99) 99999-9999</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/seuperfil">linkedin.com/in/seuperfil</a></p>
-        </div>
+            <div class="contact-info">
+                <p><strong>Email:</strong> seuemail@exemplo.com</p>
+                <p><strong>Telefone:</strong> (99) 99999-9999</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/seuperfil">linkedin.com/in/seuperfil</a></p>
+            </div>
+        </header>
+        
 
-        <div class="section">
+        <section class="section">
             <h2>Objetivo</h2>
             <p>Descrever brevemente seu objetivo profissional, área de interesse ou metas para o futuro.</p>
-        </div>
+        </section>
 
-        <div class="section skills">
+        <section class="section skills">
             <h2>Habilidades</h2>
             <ul>
                 <li>HTML5</li>
@@ -117,9 +35,9 @@
                 <li>React</li>
                 <li>Git</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section experience">
+        <section class="section experience">
             <h2>Experiência Profissional</h2>
             <div class="experience-item">
                 <h3>Desenvolvedor Front-End - Empresa X</h3>
@@ -131,16 +49,16 @@
                 <span>Jan 2019 - Dez 2019</span>
                 <p>Descrição das responsabilidades e realizações durante o estágio.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="section education">
+        <section class="section education">
             <h2>Formação Acadêmica</h2>
             <div class="education-item">
                 <h3>Bacharelado em Ciência da Computação - Universidade Z</h3>
                 <span>2016 - 2020</span>
                 <p>Descrição breve sobre a formação.</p>
             </div>
-        </div>
+        </section>
     </div>
 
 </body>
